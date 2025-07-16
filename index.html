@@ -2,59 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Ayano Kaneda • Digital Humans Research</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ayano Kaneda</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <aside class="sidebar">
-    <h1>Ayano Kaneda</h1>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#publications">Publications</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </aside>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1>Ayano Kaneda</h1>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </aside>
 
-  <main class="content">
-    <section class="hero">
-      <h2>Photorealistic Digital Humans / 3D Reconstruction</h2>
-      <p>I work on neural rendering, spatial AI, and avatar reconstruction.</p>
-    </section>
+    <main class="content">
+      <section class="hero">
+        <h2>Photorealistic Digital Humans / 3D Reconstruction</h2>
+        <p>
+          I work on <strong>neural rendering</strong>, <strong>non-rigid 3D reconstruction</strong>,
+          and <strong>spatial AI</strong> for efficient digital human synthesis.
+        </p>
+      </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="assets/images/proj1.jpg" alt="Project 1" />
-          <h3>Non-Rigid ICP with Pretrained Features</h3>
-          <p>Using SfM priors and neural fields to stabilize 3D alignment.</p>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="assets/images/proj1.jpg" alt="Project 1" />
+            <h3>Neural ICP</h3>
+            <p>Combining pretrained vision features with non-rigid alignment.</p>
+          </div>
+          <div class="card">
+            <img src="assets/images/proj2.jpg" alt="Project 2" />
+            <h3>Avatar Reconstruction</h3>
+            <p>Photorealistic human avatars with real-time volumetric rendering.</p>
+          </div>
         </div>
-        <!-- 他のプロジェクトも同じ形式で -->
-      </div>
-    </section>
+      </section>
 
-    <section id="publications">
-      <h2>Publications</h2>
-      <ul>
-        <li>
-          <strong>Oscillatory State-Space Models</strong> – ICLR 2025  
-          [<a href="#">PDF</a>] [<a href="#">arXiv</a>] [<a href="#">GitHub</a>]
-        </li>
-        <!-- 他の論文も -->
-      </ul>
-    </section>
+      <section id="publications">
+        <h2>Publications</h2>
+        <ul>
+          <li>
+            <strong>Oscillatory State-Space Models</strong> – ICLR 2025  
+            [<a href="#">PDF</a>] [<a href="#">arXiv</a>] [<a href="#">GitHub</a>]
+          </li>
+          <li>
+            <strong>Matrix-Free Shared Intrinsics BA</strong> – CVPR 2024  
+            [<a href="#">PDF</a>] [<a href="#">Project</a>]
+          </li>
+        </ul>
+      </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>I’m a researcher based in Japan. My focus lies in...</p>
-    </section>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I'm a researcher based in Japan, focused on photorealistic reconstruction of humans using neural methods,
+          geometry, and spatial computing. My work blends computer vision, graphics, and AI.
+        </p>
+      </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Reach me via <a href="https://github.com/ayano721">GitHub</a>.</p>
-    </section>
-  </main>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Reach me via <a href="https://github.com/ayano721" target="_blank">GitHub</a>.
+        </p>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
