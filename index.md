@@ -2,6 +2,8 @@
 layout: home
 title: "Ayano Kaneda"
 subtitle: "researcher"
+permalink: /
+author_profile: true
 ---
 
 I'm a researcher working on **photorealistic digital humans**, **non-rigid 3D reconstruction**, and **neural rendering**.
