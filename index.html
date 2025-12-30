@@ -2,74 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Ayano Kaneda • Digital Humans Research</title>
+  <title>Ayano Kaneda</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="layout">
     <aside class="sidebar">
+      <img src="assets/images/profile.jpg" class="avatar" alt="Ayano Kaneda" />
       <h1>Ayano Kaneda</h1>
+      <p class="tagline">I want to do research</p>
       <nav>
+        <a href="#research">Research</a>
         <a href="#projects">Projects</a>
         <a href="#publications">Publications</a>
-        <a href="#about">About</a>
+        <a href="#talks">Invited Talks</a>
+        <a href="#awards">Awards</a>
+        <a href="#support">Research Support</a>
         <a href="#contact">Contact</a>
       </nav>
+      <div class="sidebar-links">
+        <a href="https://scholar.google.com/citations?user=YCs12mQAAAAJ&hl=ja" target="_blank" rel="noreferrer">Google Scholar</a>
+        <a href="https://drive.google.com/file/d/1usH4vVFsj4xMKqSm0YAKXSzAvPgyQawb/view?usp=share_link" target="_blank" rel="noreferrer">CV (PDF)</a>
+      </div>
     </aside>
 
     <main class="content">
-      <section class="hero">
-        <h2>Photorealistic Digital Humans / 3D Reconstruction</h2>
+      <section class="hero" id="research">
+        <h2>Research Interest</h2>
         <p>
-          I work on <strong>neural rendering</strong>, <strong>non-rigid 3D reconstruction</strong>,
-          and <strong>spatial AI</strong> for efficient digital human synthesis.
+          My research interests are in numerical optimization, differential geometry, physics-based simulation in computer graphics, and applying machine learning to solve their systems, including various simulations of deformable solids, fluids, and thermomechanical effects and non-linear/linear optimization for sparse matrices.
         </p>
+        <p class="note"></p>
       </section>
 
       <section id="projects">
         <h2>Projects</h2>
-        <div class="grid">
-          <div class="card">
-            <img src="assets/images/proj1.jpg" alt="Project 1" />
-            <h3>Neural ICP</h3>
-            <p>Combining pretrained vision features with non-rigid alignment.</p>
-          </div>
-          <div class="card">
-            <img src="assets/images/proj2.jpg" alt="Project 2" />
-            <h3>Avatar Reconstruction</h3>
-            <p>Photorealistic human avatars with real-time volumetric rendering.</p>
-          </div>
+        <div class="project">
+          <img src="assets/images/icml2.jpg" alt="ICML 2024 project thumbnail" class="project-thumb" />
+          <h3>A Neural-preconditioned Poisson Solver for Mixed Dirichlet and Neumann Boundary Conditions</h3>
+          <p class="meta">ICML 2024 (poster)</p>
+          <p class="authors">Kai Weixian Lan, Elias Gueidon, Ayano Kaneda, Julian Panetta, Joseph Teran</p>
+          <p class="links">
+            <a href="https://arxiv.org/abs/2310.00177" target="_blank" rel="noreferrer">paper</a>
+            <a href="https://www.youtube.com/watch?v=Z1fQoe66YN0" target="_blank" rel="noreferrer">video</a>
+          </p>
+        </div>
+        <div class="project">
+          <img src="assets/images/icml.jpg" alt="ICML 2023 project thumbnail" class="project-thumb" />
+          <h3>A Deep Conjugate Direction Method for Iteratively Solving Linear Systems</h3>
+          <p class="meta">ICML 2023</p>
+          <p class="authors">Ayano Kaneda, Osman Akar, Jingyn Chen, Victoria Kala, David Hyde,Joseph Teran</p>
+          <p class="links">
+            <a href="https://github.com/ayano721/2023_DCDM" target="_blank" rel="noreferrer">project page</a>
+            <a href="https://arxiv.org/abs/2205.10763" target="_blank" rel="noreferrer">paper</a>
+            <a href="https://www.youtube.com/watch?v=_-kTsEN_yN0" target="_blank" rel="noreferrer">video</a>
+          </p>
+        </div>
+        <div class="project">
+          <h3>Fiber-Dependent Approach for Fast Dynamic Character Animation</h3>
+          <p class="meta">CASA 2017 (oral), pp.1-10, South Korea</p>
+          <p class="authors">Ayano Kaneda, Tsukasa Fukusato, Yoshihiro Fukuhara, Takayuki Nakatsuka, Shigeo Morishima</p>
+          <p class="links">
+            <a href="https://www.researchgate.net/publication/317040939_Fiber-Dependent_Approach_for_Fast_Dynamic_Character_Animation#fullTextFileContent" target="_blank" rel="noreferrer">paper</a>
+          </p>
         </div>
       </section>
 
       <section id="publications">
         <h2>Publications</h2>
-        <ul>
+
+        <h3 class="subheading">Peer-reviewed Papers</h3>
+        <ul class="pub-list">
           <li>
-            <strong>Oscillatory State-Space Models</strong> – ICLR 2025  
-            [<a href="#">PDF</a>] [<a href="#">arXiv</a>] [<a href="#">GitHub</a>]
+            <div class="pub-title">A Neural-preconditioned Poisson Solver for Mixed Dirichlet and Neumann Boundary Conditions</div>
+            <div class="pub-meta">Kai Weixian Lan, Elias Gueidon, Ayano Kaneda, Julian Panetta, Joseph Teran · ICML 2024 (poster)</div>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2310.00177" target="_blank" rel="noreferrer">paper</a>
+              <a href="https://www.youtube.com/watch?v=Z1fQoe66YN0" target="_blank" rel="noreferrer">video</a>
+            </div>
           </li>
           <li>
-            <strong>Matrix-Free Shared Intrinsics BA</strong> – CVPR 2024  
-            [<a href="#">PDF</a>] [<a href="#">Project</a>]
+            <div class="pub-title">A Deep Conjugate Direction Method for Iteratively Solving Linear Systems</div>
+            <div class="pub-meta">Osman Akar, Jingyn Chen, Victoria Kala, David Hyde, Ayano Kaneda, Joseph Teran · ICML 2023</div>
+            <div class="pub-links">
+              <a href="https://github.com/ayano721/2023_DCDM" target="_blank" rel="noreferrer">project page</a>
+              <a href="https://arxiv.org/abs/2205.10763" target="_blank" rel="noreferrer">paper</a>
+              <a href="https://www.youtube.com/watch?v=_-kTsEN_yN0" target="_blank" rel="noreferrer">video</a>
+            </div>
+          </li>
+          <li>
+            <div class="pub-title">Fiber-Dependent Approach for Fast Dynamic Character Animation</div>
+            <div class="pub-meta">Ayano Kaneda, Tsukasa Fukusato, Yoshihiro Fukuhara, Takayuki Nakatsuka, Shigeo Morishima · CASA 2017 (oral), South Korea</div>
+            <div class="pub-links">
+              <a href="https://www.researchgate.net/publication/317040939_Fiber-Dependent_Approach_for_Fast_Dynamic_Character_Animation#fullTextFileContent" target="_blank" rel="noreferrer">paper</a>
+            </div>
           </li>
         </ul>
       </section>
 
-      <section id="about">
-        <h2>About</h2>
-        <p>
-          I'm a researcher based in Japan, focused on photorealistic reconstruction of humans using neural methods,
-          geometry, and spatial computing. My work blends computer vision, graphics, and AI.
-        </p>
+      <section id="talks">
+        <h2>Invited Talks / Lectures</h2>
+        <ul class="bullet-list">
+          <li>“Deep Learning Approach to Approximate the Solution for Poisson Matrix.” International Conference on Scientific Computing and Machine Learning 2024, Kyoto, Japan, March 19–23, 2024.</li>
+          <li>“A Deep Conjugate Direction Method for Iteratively Solving Linear Systems.” Visual Computing 2023, Tokyo, Japan, September 17–20.</li>
+        </ul>
+      </section>
+
+      <section id="awards">
+        <h2>Awards</h2>
+        <ul class="bullet-list">
+          <li>MASt3R 点群と信頼度を用いた非剛体ICPの有効性検証 (MIRU2025, IS3-012, Aug 2024) — MIRUインタラクティブセッション賞 · Ayano Kaneda, Jiazheng Chai, 加藤卓哉</li>
+          <li>多視点動画からの一貫した三次元顔メッシュ生成手法の検証と性能改善の検討 (MIRU2024, IS3-026, Aug 2024) — MIRUインタラクティブセッション賞 · Ayano Kaneda, 櫻井快勢, 武富貴史</li>
+        </ul>
+      </section>
+
+      <section id="support">
+        <h2>Research Support</h2>
+        <ul class="bullet-list">
+          <li><strong>Jan 2020 – Aug 2020 (SGU)</strong>: Top Global University Project: Waseda Goes Global - A Plan to Build a Worldwide Academic Network. <a href="http://www.sgu-ictrobotics.sci.waseda.ac.jp/en/activities/student/" target="_blank" rel="noreferrer">link</a></li>
+          <li><strong>Aug 2019 – Dec 2019 (Ministry of Education, Japan)</strong>: Tobitate ryugaku Japan project. <a href="https://tobitate.mext.go.jp/univ/program/tech/" target="_blank" rel="noreferrer">link</a></li>
+          <li><strong>Jan 2018 – Mar 2018 (SGU)</strong>: Top Global University Project: Waseda Goes Global - A Plan to Build a Worldwide Academic Network. <a href="http://www.sgu-ictrobotics.sci.waseda.ac.jp/en/activities/student/" target="_blank" rel="noreferrer">link</a></li>
+        </ul>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
-        <p>
-          Reach me via <a href="https://github.com/ayano721" target="_blank">GitHub</a>.
-        </p>
+        <p>Email: <a href="mailto:kintakosu0721@gmail.com">kintakosu0721@gmail.com</a></p>
+        <p>Google Scholar: <a href="https://scholar.google.com/citations?user=YCs12mQAAAAJ&hl=ja" target="_blank" rel="noreferrer">scholar profile</a></p>
+        <p>CV: <a href="https://drive.google.com/file/d/1usH4vVFsj4xMKqSm0YAKXSzAvPgyQawb/view?usp=share_link" target="_blank" rel="noreferrer">download PDF</a></p>
       </section>
     </main>
   </div>
