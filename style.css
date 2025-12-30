@@ -100,9 +100,15 @@ a:hover {
   line-height: 1.6;
 }
 
+.self-name {
+  font-weight: 700;
+  color: #222;
+}
+
 .pub-meta a {
-  color: #666;
-  text-decoration: none;
+  color: #1f4fa3;
+  font-weight: 600;
+  text-decoration: underline;
   margin-left: 0.5rem;
 }
 
@@ -111,8 +117,7 @@ a:hover {
 }
 
 .pub-meta a:hover {
-  text-decoration: underline;
-  color: #000;
+  color: #0f2f6e;
 }
 .pub-image {
   width: 100%;
@@ -200,13 +205,31 @@ a:hover {
 }
 
 .pub-links a {
-  margin-right: 0.8rem;
-  font-size: 0.9rem;
-  color: #444;
+  display: inline-block;
+  margin: 0 0.5rem 0.35rem 0;
+  padding: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1f4fa3;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: color 0.15s ease;
+}
+
+.pub-links a::before {
+  content: "[";
+  margin-right: 0.12rem;
+  color: #1f4fa3;
+}
+
+.pub-links a::after {
+  content: "]";
+  margin-left: 0.12rem;
+  color: #1f4fa3;
 }
 
 .pub-links a:hover {
-  color: #000;
+  color: #0f2f6e;
 }
 
 .bullet-list {
