@@ -105,9 +105,18 @@ a:hover {
   color: #222;
 }
 
-.pub-meta a {
+.conf-tag {
+  display: inline-block;
+  margin-left: 0.25rem;
+  padding: 0;
+  font-weight: 700;
+  letter-spacing: 0.04em;
   color: #1f4fa3;
-  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pub-meta a {
+  color: inherit;
   text-decoration: underline;
   margin-left: 0.5rem;
 }
@@ -117,7 +126,7 @@ a:hover {
 }
 
 .pub-meta a:hover {
-  color: #0f2f6e;
+  color: inherit;
 }
 .pub-image {
   width: 100%;
@@ -210,7 +219,7 @@ a:hover {
   padding: 0;
   font-size: 0.95rem;
   font-weight: 700;
-  color: #1f4fa3;
+  color: #b34747;
   text-decoration: none;
   letter-spacing: 0.01em;
   transition: color 0.15s ease;
@@ -229,7 +238,7 @@ a:hover {
 }
 
 .pub-links a:hover {
-  color: #0f2f6e;
+  color: #8f2f2f;
 }
 
 .bullet-list {
@@ -240,4 +249,52 @@ a:hover {
 
 .bullet-list li {
   margin-bottom: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: static;
+    height: auto;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding: 1.5rem 1.2rem;
+  }
+
+  .avatar {
+    width: 96px;
+    height: 96px;
+  }
+
+  .sidebar nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1rem;
+    justify-content: flex-start;
+  }
+
+  .sidebar nav a {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  .content {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .pub-inline {
+    max-width: 100%;
+  }
+
+  .pub-list li {
+    margin-bottom: 1.2rem;
+  }
+
+  .conf-tag {
+    margin-left: 0.15rem;
+  }
 }
