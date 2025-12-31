@@ -251,6 +251,11 @@ a:hover {
   margin-bottom: 0.8rem;
 }
 
+.award-badge {
+  color: #a64b4b;
+  font-weight: 700;
+}
+
 @media (max-width: 768px) {
   .layout {
     flex-direction: column;
